@@ -1,0 +1,50 @@
+1:"$Sreact.fragment"
+2:I[22016,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],""]
+3:I[5014,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"default"]
+5:I[97367,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+a:I[97367,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"ViewportBoundary"]
+b:I[97367,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"MetadataBoundary"]
+4:T5d3,<h2>El problema</h2>
+<p>En casi todas las empresas B2B pasa lo mismo: el lead scoring vive en un sitio, las señales de intención en otro y la acción comercial depende de que alguien se acuerde de mirar. El resultado son leads calientes que se enfrían en una bandeja y comerciales llamando a quien no toca.</p>
+<h2>La solución</h2>
+<p>Estoy unificando las tres piezas en <strong>un único sistema sobre HubSpot</strong>:</p>
+<ul>
+<li><strong>Lead scoring de encaje (fit):</strong> qué empresas se parecen a nuestros mejores clientes por sector, tamaño, tipo de operación y software que usan.</li>
+<li><strong>Intención de compra:</strong> qué hacen ahora mismo. Visitas a páginas de precio y producto, asistencia a webinars, aperturas y clics, respuestas, recurrencia.</li>
+<li><strong>Automatización SDR:</strong> cuando fit e intención se cruzan por encima del umbral, el registro entra solo en la cadencia de prospección adecuada, con la tarea creada y el contexto delante del SDR.</li>
+</ul>
+<h2>Por qué es diferente</h2>
+<p>No es una puntuación más en una columna que nadie mira. Es la pieza que <strong>decide qué pasa después</strong>. El comercial no tiene que interpretar nada: abre su cola y encuentra a quien tiene más probabilidad de comprar hoy, junto con el porqué.</p>
+<h2>Estado</h2>
+<p>En construcción, conectado con el sistema de cadencias SDR que ya está en producción. Las métricas que medimos son leads, MQL/SQL y ARR atribuido y proyectado.</p>
+9:X
+17:X
+17:C
+0:{"buildId":"Z44BaKeO5CXNV5MwM_Iwk","data":[{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"container","children":["$","div",null,{"className":"article","children":[["$","$L2",null,{"href":"/#casos","className":"back","children":[["$","$L3",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"size":16}]," Casos de éxito"]}],["$","div",null,{"className":"case-tags","style":{"marginTop":18},"children":[["$","span","RevOps",{"className":"tag","children":"RevOps"}],["$","span","Ventas",{"className":"tag","children":"Ventas"}],["$","span","IA",{"className":"tag","children":"IA"}]]}],["$","h1",null,{"children":"Lead scoring + intención de compra: el comercial llama a quien va a comprar"}],["$","p",null,{"className":"lead","children":"Un único sistema que puntúa cada lead, detecta señales de intención de compra y dispara la acción comercial correcta sin que nadie tenga que mirar un dashboard."}],["$","div",null,{"className":"stats article-stats glass","children":[["$","div",null,{"className":"stat","children":[["$","b",null,{"children":"1"}],["$","span",null,{"children":"sistema en lugar de tres"}]]}],[["$","div","en una sola nota",{"className":"stat","children":[["$","b",null,{"children":"Fit + intención"}],["$","span",null,{"children":"en una sola nota"}]]}],["$","div","handoff a SDR",{"className":"stat","children":[["$","b",null,{"children":"Auto"}],["$","span",null,{"children":"handoff a SDR"}]]}],["$","div","como fuente de verdad",{"className":"stat","children":[["$","b",null,{"children":"HubSpot"}],["$","span",null,{"children":"como fuente de verdad"}]]}]]]}],["$","div",null,{"className":"prose glass","dangerouslySetInnerHTML":{"__html":"$4"}}]]}]}],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":"$@8","staleTime":"$9","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$La",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Lead scoring + intención de compra: el comercial llama a quien va a comprar · Adrián Rivas"}],["$","meta","1",{"name":"description","content":"Un único sistema que puntúa cada lead, detecta señales de intención de compra y dispara la acción comercial correcta sin que nadie tenga que mirar un dashboard."}],"$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12"]}]}]}],"$L13"]}],"isPartial":"$@14","staleTime":"$9","varyParams":null},{"rsc":"$L15","isPartial":"$@16","staleTime":"$9","varyParams":"$17"},{"rsc":"$L18","isPartial":"$@19","staleTime":"$9","varyParams":"$17"},{"rsc":"$L1a","isPartial":"$@1b","staleTime":"$9","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@1c","rootVaryParams":null,"needsRuntimeRequest":"$@1d"}
+1e:I[39756,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"default"]
+1f:I[37457,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"default"]
+20:I[55968,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"ChatProvider"]
+21:I[22800,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"FloatingChat"]
+:HL["/portfolio/_next/static/chunks/3gltrtu__mjnd.css","style"]
+7:null
+c:["$","meta","2",{"property":"og:title","content":"Adrián Rivas"}]
+d:["$","meta","3",{"property":"og:description","content":"Construyo sistemas de marketing y ventas que trabajan solos: datos, IA y automatización al servicio del revenue."}]
+e:["$","meta","4",{"property":"og:locale","content":"es_ES"}]
+f:["$","meta","5",{"property":"og:type","content":"website"}]
+10:["$","meta","6",{"name":"twitter:card","content":"summary"}]
+11:["$","meta","7",{"name":"twitter:title","content":"Adrián Rivas"}]
+12:["$","meta","8",{"name":"twitter:description","content":"Construyo sistemas de marketing y ventas que trabajan solos: datos, IA y automatización al servicio del revenue."}]
+13:["$","meta",null,{"name":"next-size-adjust","content":""}]
+15:["$","$1","c",{"children":[null,["$","$L1e",null,{"parallelRouterKey":"children","template":["$","$L1f",null,{}]}]]}]
+18:["$","$1","c",{"children":[null,["$","$L1e",null,{"parallelRouterKey":"children","template":["$","$L1f",null,{}]}]]}]
+1a:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/chunks/3gltrtu__mjnd.css","precedence":"next"}],["$","script","script-0",{"src":"/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js","async":true}]],["$","html",null,{"lang":"es","className":"inter_f538a49-module__f4k-Ea__variable instrument_serif_6efce573-module__AI5bWq__variable","children":["$","body",null,{"children":[["$","div",null,{"className":"aurora","aria-hidden":true,"children":[["$","span",null,{}],["$","span",null,{}],["$","span",null,{}],["$","span",null,{}]]}],["$","$L20",null,{"children":[["$","div",null,{"className":"nav-wrap","children":["$","nav",null,{"className":"nav glass","children":[["$","$L2",null,{"href":"/","className":"brand","children":[["$","span",null,{"className":"brand-dot"}],"Adrián Rivas"]}],["$","div",null,{"className":"nav-links","children":[["$","$L2",null,{"href":"/#casos","className":"hide-sm","children":"Casos"}],["$","$L2",null,{"href":"/blog","children":"Blog"}],["$","$L2",null,{"href":"/#sobre-mi","className":"hide-sm","children":"Sobre mí"}],["$","$L2",null,{"href":"/#contacto","className":"btn btn-dark","children":"Hablemos"}]]}]]}]}],["$","main",null,{"children":["$","$L1e",null,{"parallelRouterKey":"children","template":["$","$L1f",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}],["$","footer",null,{"children":["$","div",null,{"className":"container footer-row","children":[["$","span",null,{"children":["© ",2026," ","Adrián Rivas Alonso"]}],["$","nav",null,{"children":[["$","$L2",null,{"href":"/#casos","children":"Casos"}],["$","$L2",null,{"href":"/blog","children":"Blog"}],"","",""]}]]}]}],["$","$L21",null,{}]]}]]}]}]]}]
+9:300
+1d:true
+9:C
+1c:0
+14:"$undefined"
+16:"$undefined"
+19:"$undefined"
+1b:"$undefined"
+8:"$undefined"

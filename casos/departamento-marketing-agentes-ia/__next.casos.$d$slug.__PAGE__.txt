@@ -1,0 +1,49 @@
+1:"$Sreact.fragment"
+2:I[22016,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],""]
+3:I[5014,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"default"]
+5:I[97367,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
+a:I[97367,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"ViewportBoundary"]
+b:I[97367,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"MetadataBoundary"]
+4:T57c,<h2>La idea</h2>
+<p>Tengo montado un sistema de <strong>agentes y subagentes</strong> que funciona como un departamento de marketing construido con IA: contenido, apoyo a SDRs, diseño, reporting. Hasta ahora solo lo usaba yo desde Claude Code. El reto era que lo usara todo el equipo <strong>sin perder el control</strong>.</p>
+<h2>El problema de compartirlo</h2>
+<p>Compartir el repositorio sin más implica que cada persona edite las instrucciones en local y acabe con su propia versión. Además, las credenciales de HubSpot, Jira o Notion terminarían repartidas por los portátiles del equipo.</p>
+<h2>La arquitectura</h2>
+<ul>
+<li>El repositorio se convierte en un <strong>servidor MCP remoto</strong>, desplegado y controlado por marketing.</li>
+<li>El administrador lo añade como <strong>conector</strong> en la organización de Claude. El equipo solo tiene que activarlo y hablar con los agentes.</li>
+<li><strong>Las instrucciones viven en el servidor</strong>: nadie las modifica y cualquier mejora llega a todos al instante.</li>
+<li><strong>Las credenciales solo existen en el servidor.</strong></li>
+<li><strong>Registro de uso</strong> por persona y herramienta para medir la adopción de verdad.</li>
+</ul>
+<h2>Estado</h2>
+<p>Piloto con un primer agente y escalado al resto si convence. Es la pieza que convierte la IA de «lo que usa Adrián» en infraestructura del departamento.</p>
+9:X
+15:X
+15:C
+0:{"buildId":"Z44BaKeO5CXNV5MwM_Iwk","data":[{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"container","children":["$","div",null,{"className":"article","children":[["$","$L2",null,{"href":"/#casos","className":"back","children":[["$","$L3",null,{"icon":{"name":"arrow-left","size":24,"node":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]]},"size":16}]," Casos de éxito"]}],["$","div",null,{"className":"case-tags","style":{"marginTop":18},"children":[["$","span","IA",{"className":"tag","children":"IA"}],["$","span","Marketing",{"className":"tag","children":"Marketing"}]]}],["$","h1",null,{"children":"Un departamento de marketing hecho de agentes de IA"}],["$","p",null,{"className":"lead","children":"Un sistema de agentes y subagentes que cubre contenido, SDR, diseño y reporting, desplegado al equipo como servidor MCP: una sola versión de las instrucciones y credenciales que nunca salen del servidor."}],["$","div",null,{"className":"stats article-stats glass","children":[["$","div",null,{"className":"stat","children":[["$","b",null,{"children":"1 servidor"}],["$","span",null,{"children":"todos los agentes, para todo el equipo"}]]}],[["$","div","servidor remoto",{"className":"stat","children":[["$","b",null,{"children":"MCP"}],["$","span",null,{"children":"servidor remoto"}]]}],["$","div","credenciales en local",{"className":"stat","children":[["$","b",null,{"children":"0"}],["$","span",null,{"children":"credenciales en local"}]]}],["$","div","uso medido",{"className":"stat","children":[["$","b",null,{"children":"100 %"}],["$","span",null,{"children":"uso medido"}]]}]]]}],["$","div",null,{"className":"prose glass","dangerouslySetInnerHTML":{"__html":"$4"}}]]}]}],null,["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]]}],"isPartial":"$@8","staleTime":"$9","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$La",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$6",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Un departamento de marketing hecho de agentes de IA · Adrián Rivas"}],["$","meta","1",{"name":"description","content":"Un sistema de agentes y subagentes que cubre contenido, SDR, diseño y reporting, desplegado al equipo como servidor MCP: una sola versión de las instrucciones y credenciales que nunca salen del servidor."}],["$","meta","2",{"property":"og:title","content":"Adrián Rivas"}],["$","meta","3",{"property":"og:description","content":"Construyo sistemas de marketing y ventas que trabajan solos: datos, IA y automatización al servicio del revenue."}],"$Lc","$Ld","$Le","$Lf","$L10"]}]}]}],"$L11"]}],"isPartial":"$@12","staleTime":"$9","varyParams":null},{"rsc":"$L13","isPartial":"$@14","staleTime":"$9","varyParams":"$15"},{"rsc":"$L16","isPartial":"$@17","staleTime":"$9","varyParams":"$15"},{"rsc":"$L18","isPartial":"$@19","staleTime":"$9","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@1a","rootVaryParams":null,"needsRuntimeRequest":"$@1b"}
+1c:I[39756,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"default"]
+1d:I[37457,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"default"]
+1e:I[55968,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"ChatProvider"]
+1f:I[22800,["/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js"],"FloatingChat"]
+:HL["/portfolio/_next/static/chunks/3gltrtu__mjnd.css","style"]
+7:null
+c:["$","meta","4",{"property":"og:locale","content":"es_ES"}]
+d:["$","meta","5",{"property":"og:type","content":"website"}]
+e:["$","meta","6",{"name":"twitter:card","content":"summary"}]
+f:["$","meta","7",{"name":"twitter:title","content":"Adrián Rivas"}]
+10:["$","meta","8",{"name":"twitter:description","content":"Construyo sistemas de marketing y ventas que trabajan solos: datos, IA y automatización al servicio del revenue."}]
+11:["$","meta",null,{"name":"next-size-adjust","content":""}]
+13:["$","$1","c",{"children":[null,["$","$L1c",null,{"parallelRouterKey":"children","template":["$","$L1d",null,{}]}]]}]
+16:["$","$1","c",{"children":[null,["$","$L1c",null,{"parallelRouterKey":"children","template":["$","$L1d",null,{}]}]]}]
+18:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/portfolio/_next/static/chunks/3gltrtu__mjnd.css","precedence":"next"}],["$","script","script-0",{"src":"/portfolio/_next/static/chunks/2a0lz-jn2wsj7.js","async":true}]],["$","html",null,{"lang":"es","className":"inter_f538a49-module__f4k-Ea__variable instrument_serif_6efce573-module__AI5bWq__variable","children":["$","body",null,{"children":[["$","div",null,{"className":"aurora","aria-hidden":true,"children":[["$","span",null,{}],["$","span",null,{}],["$","span",null,{}],["$","span",null,{}]]}],["$","$L1e",null,{"children":[["$","div",null,{"className":"nav-wrap","children":["$","nav",null,{"className":"nav glass","children":[["$","$L2",null,{"href":"/","className":"brand","children":[["$","span",null,{"className":"brand-dot"}],"Adrián Rivas"]}],["$","div",null,{"className":"nav-links","children":[["$","$L2",null,{"href":"/#casos","className":"hide-sm","children":"Casos"}],["$","$L2",null,{"href":"/blog","children":"Blog"}],["$","$L2",null,{"href":"/#sobre-mi","className":"hide-sm","children":"Sobre mí"}],["$","$L2",null,{"href":"/#contacto","className":"btn btn-dark","children":"Hablemos"}]]}]]}]}],["$","main",null,{"children":["$","$L1c",null,{"parallelRouterKey":"children","template":["$","$L1d",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}],["$","footer",null,{"children":["$","div",null,{"className":"container footer-row","children":[["$","span",null,{"children":["© ",2026," ","Adrián Rivas Alonso"]}],["$","nav",null,{"children":[["$","$L2",null,{"href":"/#casos","children":"Casos"}],["$","$L2",null,{"href":"/blog","children":"Blog"}],"","",""]}]]}]}],["$","$L1f",null,{}]]}]]}]}]]}]
+9:300
+1b:true
+9:C
+1a:0
+12:"$undefined"
+14:"$undefined"
+17:"$undefined"
+19:"$undefined"
+8:"$undefined"
