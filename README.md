@@ -51,8 +51,15 @@ Copia cualquier archivo de `content/casos/` y cambia el frontmatter (`metric`, `
 - Si no coincide nada, responde que solo puede hablar de ti y sugiere preguntas.
 - Para un tema nuevo, copia un bloque en `content/chat.ts`. Si una pregunta cae en el tema equivocado, añade una frase más concreta a las `keywords` del tema correcto.
 
-## Publicar en Vercel
+## Publicación
 
-1. Entra en [vercel.com](https://vercel.com), crea un proyecto e importa este repositorio.
-2. Deploy. No hace falta configurar nada más.
-3. Después puedes conectar tu dominio en *Settings → Domains*.
+La web está publicada en **https://arivas-web.github.io/portfolio/** con GitHub Pages. Cada push a la rama principal la vuelve a construir y publicar sola (`.github/workflows/deploy.yml`). En *Actions* puedes ver cada publicación.
+
+`npm run build` genera la web estática en `out/`. Para probarla en local: `npm run build && npm start`.
+
+### Dominio propio
+
+1. Compra el dominio (por ejemplo en Namecheap, GoDaddy o DonDominio).
+2. En GitHub: *Settings → Pages → Custom domain*, escribe el dominio y guarda.
+3. En tu proveedor de dominio, crea un registro `CNAME` de `www` apuntando a `arivas-web.github.io` (o los registros `A` que te indique GitHub para el dominio raíz).
+4. En `.github/workflows/deploy.yml` borra la línea `PAGES_BASE_PATH: /portfolio`, porque con dominio propio la web vive en la raíz. Cambia también `url` en `lib/site.ts`.
