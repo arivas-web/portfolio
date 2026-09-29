@@ -1,23 +1,26 @@
 "use client";
 
 import { ArrowUp, Sparkles, X } from "lucide-react";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { useChat } from "./ChatProvider";
 
-const SUGGESTIONS = [
-  "¿Qué hace Adrián exactamente?",
-  "¿Cómo ahorró 24.000 € con IA?",
-  "¿Qué sabe de HubSpot y RevOps?",
-  "¿Qué es Cashtor?",
-];
-
-// Formato mínimo para las respuestas: **negrita** y listas con "- "
+// Formato mínimo para las respuestas: **negrita**, [enlaces](/ruta) y listas con "- "
 function Rich({ text }: { text: string }) {
   const bold = (line: string) =>
-    line.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
-      part.startsWith("**") && part.endsWith("**") ? <strong key={i}>{part.slice(2, -2)}</strong> : part,
-    );
+    line.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g).map((part, i) => {
+      if (part.startsWith("**") && part.endsWith("**")) return <strong key={i}>{part.slice(2, -2)}</strong>;
+      const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+      if (link) {
+        return (
+          <Link key={i} href={link[2]} className="chat-link">
+            {link[1]}
+          </Link>
+        );
+      }
+      return part;
+    });
 
   const blocks: React.ReactNode[] = [];
   let list: string[] = [];
@@ -52,7 +55,7 @@ function Rich({ text }: { text: string }) {
 }
 
 function ChatBody({ autoFocus = false, compact = false }: { autoFocus?: boolean; compact?: boolean }) {
-  const { messages, loading, send } = useChat();
+  const { messages, loading, suggestions, send } = useChat();
   const [input, setInput] = useState("");
   const logRef = useRef<HTMLDivElement>(null);
 
@@ -94,7 +97,7 @@ function ChatBody({ autoFocus = false, compact = false }: { autoFocus?: boolean;
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Pregúntale a mi IA sobre mí…"
+          placeholder="Pregúntame lo que quieras sobre mí…"
           aria-label="Pregunta sobre Adrián"
           maxLength={1500}
           autoFocus={autoFocus}
@@ -103,16 +106,16 @@ function ChatBody({ autoFocus = false, compact = false }: { autoFocus?: boolean;
           <ArrowUp size={18} />
         </button>
       </form>
-      {messages.length === 0 && (
+      {suggestions.length > 0 && (
         <div className="suggestions">
-          {(compact ? SUGGESTIONS.slice(0, 3) : SUGGESTIONS).map((s) => (
+          {(compact ? suggestions.slice(0, 3) : suggestions).map((s) => (
             <button key={s} type="button" onClick={() => submit(s)}>
               {s}
             </button>
           ))}
         </div>
       )}
-      <div className="chat-note">Solo responde sobre Adrián y su trabajo. Puede equivocarse.</div>
+      <div className="chat-note">Asistente con respuestas preparadas por Adrián. Solo habla de su trabajo.</div>
     </>
   );
 }
@@ -147,9 +150,9 @@ export function FloatingChat() {
   return (
     <>
       {drawerOpen && (
-        <div className="drawer glass" role="dialog" aria-label="Chat con la IA de Adrián">
+        <div className="drawer glass" role="dialog" aria-label="Chat con Adrián">
           <div className="drawer-head">
-            <span>Pregúntale a mi IA</span>
+            <span>Pregúntame</span>
             <button onClick={() => setDrawerOpen(false)} aria-label="Cerrar chat">
               <X size={18} />
             </button>
@@ -159,7 +162,7 @@ export function FloatingChat() {
       )}
       <button className="fab glass" onClick={() => setDrawerOpen(!drawerOpen)} aria-expanded={drawerOpen}>
         <span className="brand-dot" />
-        <span className="fab-label">{drawerOpen ? "Cerrar" : "Pregúntale a mi IA"}</span>
+        <span className="fab-label">{drawerOpen ? "Cerrar" : "Pregúntame"}</span>
       </button>
     </>
   );

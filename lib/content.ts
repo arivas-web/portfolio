@@ -92,16 +92,3 @@ export function formatDate(iso: string) {
   if (Number.isNaN(d.getTime())) return iso;
   return d.toLocaleDateString("es-ES", { day: "numeric", month: "long", year: "numeric" });
 }
-
-// Todo lo que el asistente de IA sabe sobre Adrián: perfil + casos + artículos.
-export function getKnowledgeBase() {
-  const strip = (s: string) => s.replace(/<!--[\s\S]*?-->/g, "").trim();
-  const about = strip(matter(fs.readFileSync(path.join(CONTENT_DIR, "about.md"), "utf8")).content);
-  const cases = getCases()
-    .map((c) => `## Caso: ${c.title}\nResumen: ${c.summary}\nMétrica principal: ${c.metric} ${c.metricLabel}\n\n${strip(c.body)}`)
-    .join("\n\n---\n\n");
-  const posts = getPosts()
-    .map((p) => `## Artículo: ${p.title} (${p.date})\n\n${strip(p.body)}`)
-    .join("\n\n---\n\n");
-  return `# PERFIL\n\n${about}\n\n# CASOS DE ÉXITO\n\n${cases}\n\n# ARTÍCULOS DEL BLOG\n\n${posts}`;
-}

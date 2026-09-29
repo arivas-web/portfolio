@@ -328,6 +328,12 @@ h2 {
   border: 1px solid var(--glass-border);
   border-bottom-left-radius: 6px;
 }
+.chat-link {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .msg.assistant ul {
   margin: 4px 0;
   padding-left: 18px;

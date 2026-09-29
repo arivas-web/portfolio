@@ -9,7 +9,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.129.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^1.48.0",
     "marked": "^18.0.14",

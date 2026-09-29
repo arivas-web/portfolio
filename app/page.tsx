@@ -108,7 +108,7 @@ export default function Home() {
             </p>
             <div className="cta-actions" style={{ justifyContent: "flex-start" }}>
               <Link href="#chat" className="btn btn-dark">
-                Pregúntale a mi IA
+                Pregúntame
               </Link>
               <Link href="/blog" className="btn btn-glass">
                 Leer el blog
@@ -179,7 +179,7 @@ export default function Home() {
                 </a>
               )}
               <Link href="#chat" className="btn btn-glass">
-                Pregúntale a mi IA
+                Pregúntame
               </Link>
             </div>
           </div>

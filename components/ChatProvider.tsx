@@ -1,12 +1,15 @@
 "use client";
 
 import { createContext, useCallback, useContext, useRef, useState } from "react";
+import { initialSuggestions } from "@/content/chat";
+import { answer } from "@/lib/assistant";
 
 export type ChatMessage = { role: "user" | "assistant"; content: string };
 
 type ChatState = {
   messages: ChatMessage[];
   loading: boolean;
+  suggestions: string[];
   send: (text: string) => Promise<void>;
   drawerOpen: boolean;
   setDrawerOpen: (open: boolean) => void;
@@ -20,56 +23,42 @@ export function useChat() {
   return ctx;
 }
 
+const wait = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
 export function ChatProvider({ children }: { children: React.ReactNode }) {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [loading, setLoading] = useState(false);
+  const [suggestions, setSuggestions] = useState(initialSuggestions);
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const messagesRef = useRef<ChatMessage[]>([]);
-  messagesRef.current = messages;
+  const loadingRef = useRef(false);
 
-  const send = useCallback(
-    async (text: string) => {
-      const question = text.trim();
-      if (!question || loading) return;
+  const send = useCallback(async (text: string) => {
+    const question = text.trim();
+    if (!question || loadingRef.current) return;
+    loadingRef.current = true;
+    setLoading(true);
+    setSuggestions([]);
+    setMessages((prev) => [...prev, { role: "user", content: question }, { role: "assistant", content: "" }]);
 
-      const history: ChatMessage[] = [...messagesRef.current, { role: "user", content: question }];
-      setMessages([...history, { role: "assistant", content: "" }]);
-      setLoading(true);
+    const reply = answer(question);
+    const update = (content: string) =>
+      setMessages((prev) => [...prev.slice(0, -1), { role: "assistant", content }]);
 
-      const update = (content: string) =>
-        setMessages((prev) => [...prev.slice(0, -1), { role: "assistant", content }]);
+    // Pequeña pausa y efecto de escritura para que se sienta como una conversación
+    await wait(450);
+    const words = reply.text.split(/(\s+)/);
+    for (let i = 0; i < words.length; i += 4) {
+      update(words.slice(0, i + 4).join(""));
+      await wait(18);
+    }
 
-      try {
-        const res = await fetch("/api/chat", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ messages: history }),
-        });
-        if (!res.ok || !res.body) {
-          const data = await res.json().catch(() => ({}));
-          update(data.error ?? "Ahora mismo no puedo responder. Inténtalo de nuevo en un momento.");
-          return;
-        }
-        const reader = res.body.getReader();
-        const decoder = new TextDecoder();
-        let answer = "";
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
-          answer += decoder.decode(value, { stream: true });
-          update(answer);
-        }
-      } catch {
-        update("Ahora mismo no puedo responder. Inténtalo de nuevo en un momento.");
-      } finally {
-        setLoading(false);
-      }
-    },
-    [loading],
-  );
+    setSuggestions(reply.followUps);
+    loadingRef.current = false;
+    setLoading(false);
+  }, []);
 
   return (
-    <ChatContext.Provider value={{ messages, loading, send, drawerOpen, setDrawerOpen }}>
+    <ChatContext.Provider value={{ messages, loading, suggestions, send, drawerOpen, setDrawerOpen }}>
       {children}
     </ChatContext.Provider>
   );
