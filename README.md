@@ -53,7 +53,7 @@ Copia cualquier archivo de `content/casos/` y cambia el frontmatter (`metric`, `
 
 ## Publicación
 
-La web está publicada en **https://arivas-web.github.io/portfolio/** con GitHub Pages. Cada push a la rama principal la vuelve a construir y publicar sola (`.github/workflows/deploy.yml`). En *Actions* puedes ver cada publicación.
+La web está publicada en **https://arivas-web.github.io/portfolio/** con GitHub Pages, que sirve la rama `gh-pages`. Cada push a la rama principal reconstruye la web y actualiza `gh-pages` sola (`.github/workflows/deploy.yml`). No toques `gh-pages` a mano. En *Actions* puedes ver cada publicación.
 
 `npm run build` genera la web estática en `out/`. Para probarla en local: `npm run build && npm start`.
 
